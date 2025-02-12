@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Ionicons (for the play button) -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+
+</head>
+<body>
+    <header class="header active" data-header>
+        <div class="container">
+    
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="110" height="53" alt="Unigine Home Logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="tournament.html" class="navbar-link" data-nav-link>Tournament</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="news.html" class="navbar-link" data-nav-link>News</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="live.html" class="navbar-link" data-nav-link>Live</a>
+              </li>
+    
+            </ul>
+          </nav>
+    
+          <a href="#" class="btn" data-btn>Join Our Team</a>
+    
+          <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+    
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="section live-match" id="live" aria-label="Live Match">
+                <div class="container">
+      
+                  <h2 class="h2 section-title">
+                    Watch Live <span class="span">Match</span>
+                  </h2>
+      
+                  <figure class="live-match-banner img-holder" style="--width: 800; --height: 470;">
+                    <img src="./assets/images/live-match-banner.jpg" width="800" height="470" loading="lazy"
+                      alt="Live Match Video Thumbnail" class="img-cover">
+                    <button class="play-btn" aria-label="Play Video">
+                      <ion-icon name="play"></ion-icon>
+                    </button>
+                  </figure>
+      
+                  <div class="live-match-player">
+      
+                    <figure class="player player-1 img-holder" style="--width: 406; --height: 277;">
+                      <img src="./assets/images/live-match-player-1.png" width="406" height="277" loading="lazy"
+                        alt="Team Tokyo Eagle" class="w-100">
+                    </figure>
+      
+                    <div class="live-match-detail">
+                      <p class="live-match-subtitle">Upcoming Live Matches</p>
+                      <time class="live-match-time" datetime="08:30">08:30</time>
+                    </div>
+      
+                    <figure class="player player-2 img-holder" style="--width: 400; --height: 305;">
+                      <img src="./assets/images/live-match-player-2.png" width="400" height="305" loading="lazy"
+                        alt="Team New York Hunter7" class="w-100">
+                    </figure>
+      
+                  </div>
+      
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Ensure script.js loads after content -->
+    <script src="./assets/js/script.js" defer></script>
+
+</body>
+</html>
